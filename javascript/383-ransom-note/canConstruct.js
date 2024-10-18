@@ -61,10 +61,12 @@ var canConstruct = function(ransomNote, magazine) {
         if(neededLetters.includes(char)){
             let index = neededLetters.findIndex((c) => {
                 console.log(c)
-                c == char
+                return c == char
             })
             // console.log(neededLetters)
-            neededLetters = neededLetters.splice(index,1)
+
+
+            neededLetters.splice(index,1)
             console.log('neededLetters has character ',char,'at index',index)
             // console.log(neededLetters)
         }
