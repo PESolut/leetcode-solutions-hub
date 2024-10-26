@@ -45,7 +45,7 @@ we can scan through the array from left to right, on each iteration we can check
 
 we create a insertIndex pointer, which will be used to update the nums array with unique elements.
 
-as we iterate through the array, we can compare the current element with the next element. if the numbers are different, we can update the nums array[insertIndex] with the current element.
+as we iterate through the array, we can compare the current element with the previous element. if the numbers are different, we can update the nums array[insertIndex] with the current element.
 
 we increment the insertIndex pointer, and continue iterating through the array.
 
