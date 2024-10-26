@@ -9,6 +9,23 @@
  */
 const removeDuplicates = (nums) => {
 
+    let insertIndex = 1;
+
+    for(let i = 1; i < nums.length; i++) {
+        currentElement = nums[i]
+        previousElement = nums[i - 1]
+
+        // we only are doing something if the current element is different from the previous element
+        if(currentElement !== previousElement) {
+            nums[insertIndex] = currentElement;
+            insertIndex++;
+        }
+
+    }
+
+    return insertIndex;
+
+
 }
 
 console.log(removeDuplicates([1, 1, 2])) // => [1, 2]
