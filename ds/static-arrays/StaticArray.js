@@ -19,3 +19,10 @@ isEmpty
 isFull
 */
 
+// every new array should start off with size of the first argument integer value
+class StaticArray {
+    constructor(size) {
+        this.size = size
+
+    }
+}
